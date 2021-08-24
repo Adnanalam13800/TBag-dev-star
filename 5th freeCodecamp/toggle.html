@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+</head>
+<body>
+
+    <style>
+        #panel, flip{
+            text-align: center;
+            background-color: aliceblue;
+            padding: 5px;
+            border: 1px solid red;
+        }
+        #flip{
+            display: none;
+            padding: 50px;
+        }
+    </style>
+
+    <h1 id="panel">Click here</h1>
+    <p id="flip">welcome to the world</p>
+
+    <script>
+      $(document).ready(function(){
+          $("panel").click(function(){
+              $("#flip").slideToggle("slow");
+          });
+      });
+    </script>
+    
+</body>
+</html>
