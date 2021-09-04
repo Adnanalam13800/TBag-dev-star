@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<style>
+    /* body {
+        margin-top: 70px;
+        background-color:#333;
+        color: #fff;
+    } */
+</style>
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <form action="">
+                    <div class="form-group">
+                        <input type="number"
+                        id="IbsInput"
+                        class="form-control form-control-lg"
+                        placeholder="Enter pounds here...">
+                    </div>
+                </form>
+                <div id="outPut">
+                    <div class="card card-primary mb-2">
+                        <div class="card-block">
+                            <h4 class=col-md-2> Pounds: </h4>
+                            <div id="poundsInPut" class="col-md-12"></div>
+                        </div>
+                    </div>
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4 class="col-md-2">Kilograms: </h4>
+                            <div id="kilogramInPut" class="col-md-12"></div>
+                        </div>
+                    </div>
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4 class="col-md-2">Ounces: </h4>
+                            <div id="ouncesInPut" class="col-md-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        document.getElementById("IbsInput").addEventListener('input', function(e){
+            let pounds = e.target.value;
+            document.getElementById("poundsInPut").innerHTML = pounds/0.0022046;
+            document.getElementById("kilogramInPut").innerHTML = pounds/2.2046;
+            document.getElementById("ouncesInPut").innerHTML = pounds*16;
+
+            e.preventDefault();
+        })
+
+
+    </script>
+
+
+    
+</body>
+</html>
