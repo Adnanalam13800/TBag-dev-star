@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @TBag-dev-star
+- 👋 Hi, I’m @Adnan Alam
 - 👀 I’m interested in Technology, watching movies, playing cricket, football, badminton and sometime napping hehe.
 - 🌱 I’m currently learning JavaScript core, huh So hard and lots of new things to go wtih, hopefully I can chase one by one.
 - 💞️ I’m looking to collaborate on Some advanced and intermediate javaScript prjects to collaborate and to guide each other.
